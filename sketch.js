@@ -15,9 +15,6 @@ function setup() {
 }
 
 function draw() {
-
-}
-
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+  var p = tracker.getCurrentPostition();
+  ellipse(p[62][0], p[62][1], 20, 20);
 }
